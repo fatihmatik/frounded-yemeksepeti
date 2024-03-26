@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    
+    <title>Yemeksepeti</title>
+    
+</head>
+<body>
+    <header>
+        <div id="top-left-logo">
+            <a href="#"><img src="svgs/Yemeksepeti_logo.svg" alt=""></a>
+        </div>
+        <div class="top-right-buttons">
+            <button class="top-right-buttons" id="login" onclick="togglePopupLogin()">Giriş Yap</button>
+            
+            <button class="top-right-buttons" id="register" onclick="togglePopupLogin()">Kayit Ol</button>
+            
+            <select id="language-option">
+                <option value="Turkish">TR</option>
+                <option value="English">EN</option>
+            </select>
+            
+            <i class="fa-solid fa-basket-shopping" id="basket"></i>
+        </div>
+    </header>
+
+    <div class="hero1">
+        <div class="hero1-text-sbar-container">
+            <div class="hero1-text">Yemek ya da market, tüm ihtiyaçlarin kapinda!
+            </div>
+            <div class="hero1-searchbar">
+                <input type="text" placeholder="Adresini Belirle veya Seç">
+                <button>Keşfet</button>
+            </div>
+        </div>
+        <div class="hero1-image">
+            <img src="img/refresh-hero-home-tr.webp" alt="">
+        </div>
+    </div>
+
+    <div class="hero2">
+        <div class="hero2-header">
+            <p>Restoran veya Mahalle esnafi iş ortağimiz olun</p>
+        </div>
+        <div class="hero2-image">
+            <img src="img/home-vendor-tr.webp" alt="">
+        </div>
+    </div>
+
+    <div class="hero2-text-container">
+        <div class="hero2-floating-text">
+           <p class="hero2-floating-text-header">
+               Hemen katilin, Yemeksepeti ile satişlarinizi katlamaya başlayin
+           </p>
+           <p>
+            Binlerce yeni kullaniciya ulaşabilmek ister misiniz? Sadece kendi semtinizdekiler değil, artik çevre semtlerdeki binlerce kullanici da işletmenizden sipariş verebilecek. Bir ev, bir plaza, bir işyeri ya da üniversite kampüsü, hizmet vermek istediğiniz kim varsa artik müşteriniz.
+           </p>
+           <p>
+            Gayet basit! Menünüzü listeliyoruz ve sipariş bilgilerini size ulaştiriyoruz. Sipariş teslimatini dilerseniz kendiniz yapabiliyorsunuz, dilerseniz Yemeksepeti sizin adiniza kullaniciya ulaştiriyor.
+           </p>
+           <p>
+            Hemen ailemize katilabilir ve muhteşem avantajlara sahip iş ortaklarimizdan biri olabilirsiniz.
+           </p>
+           <button>Başlayalim</button>
+        </div>
+    </div>
+
+    <div class="cities">
+        <p>Türkiye'nin her şehrindeyiz!</p>
+        <div class="cities-items">
+            <div class="cities-item">
+                <img src="img/city-tile-ankara.webp" alt="">
+                <div class="cities-overlay-text">
+                    Ankara
+                </div>
+            </div>
+            <div class="cities-item">
+                <img src="img/city-tile-antalya.webp" alt="">
+                <div class="cities-overlay-text">
+                    Antalya
+                </div>
+            </div>
+            <div class="cities-item">
+                <img src="img/city-tile-bursa.webp" alt="">
+                <div class="cities-overlay-text">
+                    Bursa
+                </div>
+            </div>
+            <div class="cities-item">
+                <img src="img/city-tile-istanbul.webp" alt="">
+                <div class="cities-overlay-text">
+                    Istanbul
+                </div>
+            </div>
+            <div class="cities-item">
+                <img src="img/city-tile-izmir.webp" alt="">
+                <div class="cities-overlay-text">
+                    Izmir
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="apps">
+        <div class="apps-text">
+            <p>Mobil uygulamamizi indirin</p>
+        </div>
+
+        <div class="apps-hero">
+            <div class="apps-hero-left">
+                <div class="app-hero-header">
+                    <p>Yemek ve market ihtiyaçlarinin tamami için hemen indir!
+                    </p>
+                </div>
+                
+                <div class="app-hero-middle">
+                    <div class="app-hero-mid-qr">
+                        <img src="img/trhomepageqrcode.png" alt="">
+                    </div>
+                    <div class="app-hero-mid-text">
+                        Yemek, hizli market ya da çevredeki esnaflardan tüm ihtiyaçlarin dakikalar içinde kapinda. Yemeksepeti'ni indir, sepetini oluşturup siparişini ver, online ya da kapida dilediğin gibi öde.
+                    </div>
+                </div>
+                <div class="app-hero-footer">
+                    <img src="svgs/download-on-the-app-store-apple-logo-svgrepo-com.svg" alt="">
+
+                    <img src="svgs/google-play-badge-logo-svgrepo-com.svg" alt="">
+                    
+                    <img src="svgs/app-huawei-uk.svg" alt="">
+                </div>
+            </div>
+
+            <div class="apps-hero-right">
+                <img src="img/home-yemeksepeti-apps.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="description">
+        <p>
+            Türkiye'nin 81 şehri ve KKTC'de, 50 bini aşkin restoran iş ortağimizla, Türkiye'de online yemek siparişi denince ilk akla gelen markayiz! Restoran zincirleri başta olmak üzere, civarinizdaki en sevdiğiniz restoranlardan kolayca sipariş verebilirsiniz.
+        </p>
+        <p>
+            Bunun yaninda, hizli market alişverişine ihtiyaciniz varsa, Yemeksepeti Market hizmetinizde! Binlerce market ürünü dilediğiniz anda, dakikalar içinde gelsin!
+        </p>
+        <p>
+            Restoraninizi seçin, istediğiniz yemekleri sepete ekleyin, online ya da kapida dilediğiniz gibi ödeyin. Gerisi kolay, siparişiniz hizlica kapinizda!
+        </p>
+        <p>
+            Yemeksepeti Mahalle de burada! Çevrenizdeki bildiğiniz, güvendiğiniz işletme ve esnaflar; marketten kasaba, şarküteriden manava, balikçidan petshopa, tüm kampanyalari ve firsatlariyla siparişiniz için hazir.
+        </p>
+        
+        <h1>Yemeksepeti'nde sizi neler bekliyor?</h1>
+        <p>
+            <span>✓</span> Yemek siparişi ya da market alişverişinde onlarca mutfak ve kategori, binlerce çeşit ürün!
+
+        </p>
+        <p>
+            <span>✓</span> Yemek ve market ihtiyaçlarinizda her gün on binlerce indirim!
+        </p>
+        <p>
+            <span>✓</span> Online ya da kapida, dilediğiniz gibi ödeme seçeneği!
+        </p>
+        <p>
+            <span>✓</span> Siparişinizle ilgili size her zaman destek olmaya hazir, 7/24 Canli Yardim ekibi!
+        </p>
+        <p>
+            Tek yapmaniz gereken ihtiyacinizi düşünmek ve çevrenizdeki seçeneklere göz atmak!
+        </p>
+        <h1>
+            Yemeksepeti yaninda, aklindaysa kapinda!
+        </h1>
+    </div>
+
+    <hr>
+
+    <div class="cuisines">
+        <div class="cuisines-header">
+            <h1>Mutfaklar</h1>
+        </div>
+        <div class="cuisines-columns">
+
+            <div class="cuisines-column">
+                <h1>Istanbul</h1>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+            </div>
+            <div class="cuisines-column">
+                <h1>Ankara</h1>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                
+                
+            </div>
+            <div class="cuisines-column">
+                <h1>Izmir</h1>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+            </div>
+            <div class="cuisines-column">
+                <h1>Antalya</h1>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+                <a href="#">Burger</a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="othercities">
+        <div class="othercities-header">
+            <h1>Diğer Şehirler</h1>
+        </div>
+        <div class="othercities-columns">
+
+            <div class="othercities-column">
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">KKTC</a>
+            </div>
+            <div class="othercities-column">
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Bütün Şehir ve Bölgeler</a>
+            </div>
+            <div class="othercities-column">
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+            </div>
+            <div class="othercities-column">
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+                <a href="#">Adana</a>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+
+    <div class="footer-hero1">
+        <img src="img/yemek_com_logo_new.png" alt="">
+        <img src="img/yemek_com_google.png" alt="">
+        <img src="img/yemek_com_apple.png" alt="">
+    </div>
+
+    <div class="footer-legal">
+        <img id="guvendamgasi" src="img/guvendamgasi-logo.png" alt="">
+        <img id="qr-etbis" src="img/qr-etbis.png" alt="">
+        
+    </div>
+    
+    <hr>
+    
+    <div class="footer-contact">
+        <div class="footer-copyright">
+            <p>&copy; Yemeksepeti</p>
+        </div>
+
+        <div class="footer-columns">
+            <div class="footer-column">
+                <a href="#">Yardim Merkezi</a>
+                <a href="#">Çerez Politikasi</a>
+                <a href="#">Kurumsal Site</a>
+                <a href="#">Bilgi Toplumu Hizmetleri</a>
+            </div>
+            <div class="footer-column">
+                <a href="#">Kullanim Koşullari</a>
+                <a href="#">İletişim</a>
+                <a href="#">Aydinlatma Metni</a>
+            </div>
+            <div class="footer-column">
+                <a href="#">S.S.S. ve İşlem Rehberi</a>
+                <a href="#">İş Ortağimiz Olun</a>
+                <a href="#">Kişisel Verilerin Korunmasi ve İşlenmesi ve Gizlilik Politikasi</a>
+            </div>
+        </div>
+
+    </div>
+    
+    <hr>
+    
+    <div class="footer-media">
+        <div class="footer-media-logos">
+            <img class="footer-media-logos-yemeksepeti" src="svgs/Yemeksepeti_logo.svg" alt="">
+            <hr>
+            <img class="footer-media-logos-deliveryhero" src="svgs/delivery-hero.svg" alt="">
+        </div>
+        <div class="footer-media-socials">
+            <button>
+                <img id="footer-media-socials-linkedin" src="img/linkedin-mini.png" alt="">
+            </button>
+            <button>
+                <img src="img/instagram-mini.png" alt="">
+            </button>
+            <button>
+                <img src="img/facebook-mini.png" alt="">
+            </button>
+            <button>
+                <img src="img/twitter-mini.png" alt="">
+            </button>
+        </div>
+    </div>
+
+
+    <div class="popup" id="loginpopup">
+        <div class="close-btn" onclick="closePopupLogin()"><p>&times;</p></div>
+        
+        <h1>Hoş geldin!</h1>
+        
+        <p>Devam etmek için kayit ol ya da giriş yap<p>
+        
+        <div class="social-logins">
+            <button id="facebook-login">
+                <img src="img/facebook-mini.png" alt="">
+                <p>Facebook ile Devam Et</p>
+            </button>
+            <button id="google-login">
+                <p>Google ile Devam Et</p>
+            </button>
+        </div>
+        
+        <p>ya da</p>
+
+        <div class="normal-logins">
+            <button class="normal-logins-login">Giriş Yap</button>
+            <button class="normal-logins-signup">Kayit Ol</button>
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+</html>
